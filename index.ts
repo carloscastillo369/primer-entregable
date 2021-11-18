@@ -25,7 +25,13 @@ class Client {
     }
 
     public retirarDinero = (retiro:number)=>{
-        console.log(`Has retirado: ${retiro} soles. Tu saldo es: ${this.saldo - retiro} soles`)
+        if(this.saldo >= retiro){
+            console.log(`Has retirado: ${retiro} soles. Tu saldo es: ${this.saldo - retiro} soles`)
+        }
+        else {
+            console.log('La cantidad ha retirar excede a tu saldo. Ingresar una nueva cantidad')
+        }
+        
     }
 }
 
@@ -37,4 +43,4 @@ let andrea = new Client('Andrea', 'Silva', 2233, 600);
 
 andrea.verificarContraseña(2233);
 andrea.obtenerSaldo();
-andrea.retirarDinero(125);
+andrea.retirarDinero(700);

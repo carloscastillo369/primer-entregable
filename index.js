@@ -18,7 +18,12 @@ var Client = /** @class */ (function () {
             console.log("Tu saldo es: " + _this.saldo + " soles");
         };
         this.retirarDinero = function (retiro) {
-            console.log("Has retirado: " + retiro + " soles. Tu saldo es: " + (_this.saldo - retiro) + " soles");
+            if (_this.saldo >= retiro) {
+                console.log("Has retirado: " + retiro + " soles. Tu saldo es: " + (_this.saldo - retiro) + " soles");
+            }
+            else {
+                console.log('La cantidad ha retirar excede a tu saldo. Ingresar una nueva cantidad');
+            }
         };
     }
     return Client;
@@ -29,4 +34,4 @@ var diego = new Client('Diego', 'Perez', 5555, 1000);
 var andrea = new Client('Andrea', 'Silva', 2233, 600);
 andrea.verificarContraseña(2233);
 andrea.obtenerSaldo();
-andrea.retirarDinero(125);
+andrea.retirarDinero(700);
