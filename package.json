@@ -1,0 +1,22 @@
+{
+  "name": "primer-entregable",
+  "version": "1.0.0",
+  "description": "NodeJs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carloscastillo369/primer-entregable.git"
+  },
+  "keywords": [
+    "typescript"
+  ],
+  "author": "Carlos Castillo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carloscastillo369/primer-entregable/issues"
+  },
+  "homepage": "https://github.com/carloscastillo369/primer-entregable#readme"
+}
